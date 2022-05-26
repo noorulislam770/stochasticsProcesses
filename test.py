@@ -63,8 +63,8 @@ example = {
 markov_chain = pd.DataFrame(data=example,index = ["NYC","Paris","Cairo","Seoul"])
 markov_chain
 
-markov_chain_image  =  MarkovChain(markov_chain, ["NYC","Paris","Cairo","Seoul"] )
-markov_chain_image.draw("./markov_chain.png")
+markov_chain_image  =  MarkovChain(markov_chain.to_numpy(), markov_chain.columns.tolist() )
+# markov_chain_image.draw("./markov_chain.png")
 
 
 
